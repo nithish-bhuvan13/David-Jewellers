@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* *, *::before, *::after {
+  box-sizing: border-box;
+} */
+.container-acc{
+    position: fixed;
+    width:30%;
+    height:100%;
+    background-color: #f5f9d0;
+   left: auto;
+   right: 0;
+    /* margin-left 70% open ; 100% close; */
+    transition:right 1s ease ;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    cursor: default;
+    overflow-y:auto;
+    overflow-x: hidden;
+}
+.container-acc-active{
+    margin-left: 100%;
+}
+.Identify{
+    display: flex;
+    position: relative;
+    top: 25px;
+    left:25px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.container-acc hr{
+    margin:0  30px;
+    display:flex ;
+    position: relative;
+    top: 50px;
+    background-color: black;
+    border: none;
+    height: 3px;
+}
+.signin{
+    display: flex;
+    position: relative;
+    top:130px;
+    left:30px;
+    font-size: 40px ;
+    z-index: 10;
+    letter-spacing: 3px;
+
+}
+.signin1{
+    display: flex;
+    position: relative;
+    top:140px;
+    left:30px;
+    font-size: 20px ;
+    z-index: 10;
+    letter-spacing: 2px;
+
+}
+.login-box{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #f5f9d000;
+    top:18%;
+    width: 90%;
+    height: 50%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.login-box input{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top:17px;
+    padding-left: 10px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 300px;
+    border: none;
+    align-items: center;
+   background: transparent;
+    height: 30px;
+    border-bottom: 2px black solid;
+    font-size:20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.login-box input:focus{
+    outline: none;
+}
+.email,.pass{
+    position: relative;
+    top:-18%;
+    left:14%;
+
+}
+.forgot-pass{
+     word-spacing: 3px;
+    position: relative;
+     font-size: 15px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color:blue;
+    top:-10%;
+    left: 15%;
+}
+
+
+
+.login-btn{
+    
+    height: 15%;
+    width:70%;
+     position: relative;
+    left: auto; /* remove fixed left */
+    top:-4%;
+     margin: 10px auto 0;
+    padding: 5px;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 2px;
+    background-color: cadetblue;
+    transition: all 0.3s ease;
+    color: whitesmoke;
+}
+.login-btn:hover{
+    background-color: aliceblue;
+    transform: scale(1.03) ;
+    color: black;
+    
+}
+
+.forgot-pass:hover{
+    text-decoration: underline;
+}
+.cancel-icon-menu{
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right:16px;
+    font-size: 40px;
+    font-weight: 800;
+} 
+.divider{
+    display:flex;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.divider hr{
+    top:100px;
+    max-width: 250px;
+     flex: 2;  
+    padding-left: 10px;   
+    background-color: black;
+    border: none;
+    height: 2px;
+    width: 250px;
+}
+.divider label{
+    display: flex;
+    position: relative;
+   margin: 21% 10px; 
+   font-size: large;
+   font-weight: 600;
+   z-index: 1010;
+}
+.create-acc{
+    position: relative;
+    width:70%;
+    padding:10px;
+    height:8%;
+    left:70px;
+    top: -7%;
+    font-weight:bolder;
+    border: solid 2px black;
+    letter-spacing: 2px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    background-color: cadetblue;
+    color: white;
+}
+.create-acc:hover{
+  transform: scale(1.03);
+  background-color: whitesmoke;
+  color: black;
+}
